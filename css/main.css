@@ -1,0 +1,66 @@
+@import 'reset.css';
+
+/*———— -Rob's styles below- ————*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-content{ 
+    position: absolute; 
+    top: 277px;
+    bottom: 0;
+    left: 75px;
+    right: 75px;
+}
+
+
+.desktop-video, .mobile-video{
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.desktop-video{
+    width: 83.35%;
+}
+
+.desktop-video video{
+    position: relative;
+    left: -2px;
+}
+
+.mobile-video{
+    position: absolute;
+    width: 21.4%;
+    bottom: 162px;
+    right: 0;
+}
+
+.mobile-video video{
+    position: relative;
+    bottom: -20px;
+}
+
+[data-js="video-player"]{
+    opacity: 0;
+    will-change: opacity;
+    transition: all 700ms ease;
+    width: 100%;
+    box-shadow: 0 0 30px 0 rgba(141,151,158,0.20);
+}
+
+.visible{
+    opacity: 1;
+}
